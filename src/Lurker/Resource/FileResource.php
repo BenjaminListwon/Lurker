@@ -41,6 +41,6 @@ class FileResource extends BaseFileResource implements ResourceInterface
     {
         clearstatcache(true, $this->getResource());
 
-        return is_file($this);
+        return is_file($this->getResource());
     }
 }
